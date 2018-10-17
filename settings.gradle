@@ -31,6 +31,7 @@ include 'cats:cats-core',
   'clouddriver-dcos',
   'clouddriver-docker',
   'clouddriver-ecs',
+  'clouddriver-lambda',
   'clouddriver-elasticsearch',
   'clouddriver-elasticsearch-aws',
   'clouddriver-eureka',
@@ -46,7 +47,7 @@ include 'cats:cats-core',
 
 def cloudProviderProjects = [
   'appengine':  [':clouddriver-appengine', ':clouddriver-google-common'],
-  'aws': [':clouddriver-aws', ':clouddriver-ecs', ':clouddriver-eureka', ':clouddriver-elasticsearch-aws'], // Pull cd-eureka separate "Discover" platform, along with cd-consul?
+  'aws': [':clouddriver-aws', ':clouddriver-ecs', ':clouddriver-eureka', ':clouddriver-elasticsearch-aws',':clouddriver-lambda'], // Pull cd-eureka separate "Discover" platform, along with cd-consul?
   'azure': [':clouddriver-azure'],
   'cloudfoundry': [':clouddriver-cloudfoundry'],
   'dcos': [':clouddriver-dcos'],
