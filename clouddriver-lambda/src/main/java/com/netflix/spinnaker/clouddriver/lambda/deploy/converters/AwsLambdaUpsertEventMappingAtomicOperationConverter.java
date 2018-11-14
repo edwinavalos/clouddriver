@@ -26,8 +26,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@Component("upsertAwsLambdaEventMapping")
-@LambdaOperation(AtomicOperations.UPSERT_AWSLAMBDA_EVENTMAPPING)
+@Component("upsertFunctionEventMapping")
+@LambdaOperation(AtomicOperations.UPSERT_FUNCTION_EVENTMAPPING)
 public class AwsLambdaUpsertEventMappingAtomicOperationConverter extends AbstractAtomicOperationsCredentialsSupport {
 
   @Override
@@ -43,5 +43,5 @@ public class AwsLambdaUpsertEventMappingAtomicOperationConverter extends Abstrac
     return converted;
   }
 
-  }
+}
 
